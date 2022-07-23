@@ -1,0 +1,147 @@
+html,
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(182, 182, 182);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 250px;
+
+}
+
+.title {
+    color: darkgray;
+    font-weight: 100;
+    font-size: 100px;
+    display: flex;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+}
+
+.sharp-flat {
+    display: grid;
+    width: 100%;
+    height: 50px;
+
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.blk {
+    background-color: rgb(58, 58, 58);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+
+
+.major {
+    display: grid;
+    width: 100%;
+    height: 50px;
+
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.wht {
+    background-color: darkgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border-radius: 4em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.wht:hover {
+    background-color: rgb(206, 174, 153);
+}
+
+.wht:after {
+    content: "";
+    display: block;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.wht:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.wht:active {
+    top: 1px;
+}
+
+.blk:hover {
+    background-color: rgb(87, 28, 0);
+}
+
+.blk:after {
+    content: "";
+    display: block;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.blk:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.blk:active {
+    top: 1px;
+}
+
+.vol {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 20px;
+}
+
+.adj1 {
+    color: rgb(110, 110, 110);
+}
+
+.adjustbox {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 80%;
+    height: 30px;
+}
+
